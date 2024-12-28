@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
 # Logs
 logs
 *.log
@@ -42,7 +45,10 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+<<<<<<< HEAD
 uploads/
+=======
+>>>>>>> origin/main
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
