@@ -12,7 +12,7 @@
   "dependencies": {
     "@google-cloud/vision": "^4.3.0",
     "cloudinary": "^2.4.0",
-    "dotenv": "^16.4.5",
+    "dotenv": "^16.4.7",
     "express": "^4.19.2",
     "express-fileupload": "^1.5.1",
     "file-upload": "^0.0.0",

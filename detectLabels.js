@@ -1,9 +1,10 @@
+require('dotenv').config();
+
 const OpenAI = require('openai');
 const fs = require('fs');
 
 const openai = new OpenAI({
-  apiKey:
-    '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', // Use environment variable for the API key
+  apiKey: process.env.OPENAI_API_KEY, // Use environment variable for the API key
 });
 
 async function detectLabels(path) {

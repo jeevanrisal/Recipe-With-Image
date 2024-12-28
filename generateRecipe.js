@@ -1,7 +1,9 @@
+require('dotenv').config();
+
 const OpenAI = require('openai');
+
 const openai = new OpenAI({
-  apiKey:
-    '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', // Use environment variable for the API key
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
 async function generateRecipe(ingredients) {

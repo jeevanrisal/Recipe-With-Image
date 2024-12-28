@@ -24,9 +24,9 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 cloudinary.config({
-  cloud_name: 'deat0kqfz',
-  api_key: '732683238565747',
-  api_secret: '3e3JNWUWHEYf3Vi6g_mJ6sj3Q5g', // Click 'View Credentials' below to copy your API secret
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET, // Click 'View Credentials' below to copy your API secret
 });
 
 app.post('/api/upload', upload.single('file'), async (req, res) => {
